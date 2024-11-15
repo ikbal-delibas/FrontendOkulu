@@ -1,0 +1,91 @@
+// Renk değişkenleri
+$primary-color: #0d6efd;
+$secondary-color: #6c757d;
+$danger-color: #dc3545;
+$completed-text-color: gray;
+
+// Gövde stili
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+// Uygulama container'ı
+.container {
+  margin-top: 50px;
+
+  h1 {
+    color: $primary-color;
+    text-align: center;
+  }
+
+  .input-group {
+    margin-bottom: 20px;
+
+    .form-control {
+      border: 1px solid $secondary-color;
+    }
+
+    .btn-primary {
+      background-color: $primary-color;
+      border: none;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+
+  .list-group {
+    .list-group-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &.completed {
+        text-decoration: line-through;
+        color: $completed-text-color;
+      }
+
+      .todo-text {
+        cursor: pointer;
+        flex-grow: 1;
+      }
+
+      .btn {
+        margin-left: 5px;
+
+        &.btn-warning {
+          background-color: $secondary-color;
+          border: none;
+
+          &:hover {
+            background-color: darken($secondary-color, 10%);
+          }
+        }
+
+        &.btn-danger {
+          background-color: $danger-color;
+          border: none;
+
+          &:hover {
+            background-color: darken($danger-color, 10%);
+          }
+        }
+      }
+
+      .edit-input {
+        width: 100%;
+        border: none;
+        background: transparent;
+
+        &:focus {
+          outline: none;
+          background-color: lighten($primary-color, 50%);
+        }
+      }
+    }
+  }
+}
