@@ -1,0 +1,22 @@
+[
+    {
+      "name": "İkbal Delibaş",
+      "department": "Bilişim",
+      "salary": 5000
+    },
+    {
+      "name": "Osman Erdem Kılıç",
+      "department": "Bilişim",
+      "salary": 7000
+    },
+    {
+      "name": "Aynur Delibaş",
+      "department": "Muhasebe",
+      "salary": 6000
+    },
+    {
+      "name": "Egehan Demir",
+      "department": "IK",
+      "salary": 5500
+    }
+  ]
